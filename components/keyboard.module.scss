@@ -1,0 +1,20 @@
+@import "guess.module.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  & div {
+    font-size: 1.8rem !important;
+  }
+}

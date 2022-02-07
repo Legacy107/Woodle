@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.cell {
+  cursor: default;
+  font-size: 2rem;
+  width: 1.5em;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  border: 2px solid var(--black);
+  color: var(--white);
+  transition: background 0.2s ease-in-out;
+  transition: color 0.1s linear;
+}
+
+.wrong {
+  background: var(--gray);
+}
+
+.partial {
+  background: var(--orange);
+}
+
+.correct {
+  background: var(--green);
+}
+
+.empty {
+  background: transparent;
+  color: var(--black);
+}

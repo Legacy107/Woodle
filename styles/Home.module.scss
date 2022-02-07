@@ -1,0 +1,56 @@
+.main {
+  min-height: 95vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 2.5rem;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border: 2px solid var(--black);
+  text-transform: uppercase;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--white)
+  }
+}
+
+.mode-5:hover,
+.mode-5:focus {
+  background: var(--green);
+}
+
+.mode-6:hover,
+.mode-6:focus {
+  background: var(--orange);
+}
+
+.mode-7:hover,
+.mode-7:focus {
+  background: var(--red);
+}
+
+.footer {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  margin-bottom: 0.5rem;
+  & a {
+    font-weight: bold;
+  }
+}

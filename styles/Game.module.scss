@@ -1,0 +1,51 @@
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTitle {
+  margin-top: 0;
+}
+
+.loading {
+  fill: var(--black) !important;
+  height: 128px !important;
+  width: 128px !important;
+}
+
+.form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.actionContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.5em 1em;
+  border: 2px solid var(--black);
+  text-transform: uppercase;
+  transition: background 0.2s ease-in-out;
+  transition: color 0.1s linear;
+  cursor: pointer;
+  &:hover {
+    color: var(--white)
+  }
+}
+
+.playAgain:hover,
+.playAgain:focus {
+  background: var(--green);
+}
+
+.mainMenu:hover,
+.mainMenu:focus {
+  background: var(--orange);
+}

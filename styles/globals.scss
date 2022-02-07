@@ -4,6 +4,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --black: hsl(197, 37%, 15%);
+  --white: white;
+  --green: hsl(173, 78%, 39%);
+  --orange: hsl(27, 77%, 67%);
+  --gray: hsl(197, 37%, 20%);
+  --red: hsl(12, 76%, 61%);
 }
 
 a {
