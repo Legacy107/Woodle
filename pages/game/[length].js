@@ -10,6 +10,7 @@ import Layout from '../../components/layout'
 import Guess from '../../components/guess'
 import Keyboard from '../../components/keyboard'
 import { maxGuesses, wordPattern, wordAntiPattern } from '../../utils/gamemodes'
+import shootConfetti from '../../utils/shootConfetti'
 
 export default function Game() {
   const router = useRouter()
@@ -86,8 +87,10 @@ export default function Game() {
     if (guesses[tryCount].length < length || result)
       return;
 
-    if (guesses[tryCount] === word)
+    if (guesses[tryCount] === word) {
       setResult('You win')
+      shootConfetti()
+    }
     else if (!(await isValidWord(guesses[tryCount]))) {
       toast.info("Invalid word")
       return
